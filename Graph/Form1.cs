@@ -15,6 +15,22 @@ namespace Graph
 		public Form1()
 		{
 			InitializeComponent();
+
+			List<int> list = new List<int>();
+			list.PushBack(1);
+			list.PushBack(2);
+			list.PushBack(3);
+			list.PushBack(4);
+			list.PushBack(5);
+
+
+
+			foreach (var item in list)
+			{
+				dataGridView1.Rows.Add($"{item}");
+			}
 		}
+
+		
 	}
 }
